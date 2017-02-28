@@ -103,7 +103,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>message</finalName>
+    <finalName>message project</finalName>
 	  <plugins>
 		  <plugin>
 			  <groupId>org.eclipse.jetty</groupId>
