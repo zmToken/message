@@ -18,6 +18,8 @@ public class Comment extends BaseEntity{
     private String content;
     private String userId;
     private String publishTime;
+    private int agree;
+    private int disagree;
     private boolean show;
     private boolean delete;
 
@@ -70,5 +72,21 @@ public class Comment extends BaseEntity{
 
     public void setDelete(boolean delete) {
         this.delete = delete;
+    }
+
+    public int getAgree() {
+        return agree;
+    }
+
+    public void setAgree(int agree) {
+        this.agree = agree;
+    }
+
+    public int getDisagree() {
+        return disagree;
+    }
+
+    public void setDisagree(int disagree) {
+        this.disagree = disagree;
     }
 }

@@ -18,13 +18,13 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/create",method = RequestMethod.GET)
-    public String create(){
+    @RequestMapping(value = "/register",method = RequestMethod.GET)
+    public String register(){
         return "user/create";
     }
 
-    @RequestMapping(value = "/create",method = RequestMethod.POST)
-    public String create(User user){
+    @RequestMapping(value = "/register",method = RequestMethod.POST)
+    public String register(User user){
         userService.create(user);
         return "user/index";
     }
